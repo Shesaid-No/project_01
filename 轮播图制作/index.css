@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?pvvbur');
+    src: url('fonts/icomoon.eot?pvvbur#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?pvvbur') format('truetype'),
+        url('fonts/icomoon.woff?pvvbur') format('woff'),
+        url('fonts/icomoon.svg?pvvbur#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 800px;
+    height: 450px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.focus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500%;
+}
+
+.focus li {
+    list-style: none;
+    float: left;
+}
+
+.but-l,
+.but-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    font-family: 'icomoon';
+    font-size: 48px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.but-r {
+    left: 755px;
+}
+
+.circle {
+    position: absolute;
+    top: 420px;
+    left: 20px;
+    /* background-color: green; */
+    z-index: 4;
+}
+
+.circle li {
+    display: inline-block;
+    list-style: none;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+.curent {
+    background-color: red;
+}
